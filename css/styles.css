@@ -1,0 +1,121 @@
+:root {
+  --color-icons: rgba(0, 0, 0, 0.87);
+  --color-primary: #1e3932;
+  --color-secondary: #006241;
+  --color-light: #d4e9e2;
+  --color-hover: #1e3932;
+  --color-dark-hover: #a1bbb2;
+}
+
+html {
+  font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  line-height: 3rem;
+  font-weight: 550;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border-radius: 2rem;
+
+  font-weight: 600;
+}
+
+.btn--dark {
+  border: 1px solid #1e3932;
+  color: #1e3932;
+}
+
+.btn--dark:hover {
+  background: var(--color-dark-hover);
+}
+
+.btn--light {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn--light:hover {
+  background: var(--color-secondary);
+}
+
+/* Cards */
+
+.card {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card {
+  color: white;
+}
+
+.card__header {
+  margin: 0.5rem 0;
+}
+
+.card__body {
+  padding: 0 1.6rem 3.2rem;
+}
+
+.card__content {
+  margin-bottom: 4rem;
+}
+
+.card--dark {
+  background: var(--color-primary);
+}
+
+.card--light {
+  background: var(--color-light);
+  color: #1e3932;
+}
+
+/* Grids */
+
+.grid .card {
+  margin-bottom: 3.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+  }
+
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .grid--gap {
+    gap: 35px;
+  }
+}
